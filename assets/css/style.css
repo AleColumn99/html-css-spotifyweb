@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.float-left {
+  float: left;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  height: calc(100vh - 90px);
+  background-color: #141922;
+}
+
+footer {
+  height: 90px;
+  color: #FFFFFF;
+  background-color: #282828;
+}
+
+.song-details, .media-control, .volume-panel {  
+  display: flex;
+  flex-shrink: 0;
+}
+
+.song-details {
+  padding: 15px 10px;
+  justify-content: flex-start;
+  width: 15%;
+}
+
+.song-details img {
+  height: 60px;
+}
+
+.name-artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.name-artist p {
+  font-size: 10px;
+  font-weight: 500;
+  color: #858585;
+}
+
+.save-song {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: #858585;
+}
+
+.save-song i {
+  margin-left: 10px;
+}
+
+.media-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 65%;
+  margin: 0 5%;
+}
+
+.media-panel {
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.media-panel i {
+  margin: 0 10px;
+}
+
+.media-panel i.play {
+  font-size: 25px;
+}
+
+.duration-bar {
+  display: flex;
+  align-items: center;
+}
+
+.full-bar {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  margin: 0 10px;
+  background-color: #595959;
+}
+
+.full-bar .progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 40%;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.full-bar .progress-bar:hover {
+  background-color: #ADFF2F;
+}
+
+.volume-panel {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 10%;
+}
+
+.volume-panel i {
+  margin: 0 5px;
+}
