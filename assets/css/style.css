@@ -15,6 +15,10 @@ a {
   color: #FFFFFF;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .float-left {
   float: left;
 }
@@ -42,38 +46,83 @@ main .main-nav .nav-top .nav-logo img {
   width: 70%;
 }
 
-main .main-nav .nav-left {
+main .main-nav .nav-sections {
   display: flex;
   flex-direction: column;
 }
 
-main .main-nav .nav-left .voice {
+main .main-nav .voice {
   display: flex;
   align-items: center;
   height: 30px;
   width: 100%;
 }
 
-main .main-nav .nav-left .green-bar {
+main .main-nav .nav-sections .green-bar {
   height: 30px;
   width: 2px;
   margin-right: 10px;
   background-color: #ADFF2F;
 }
 
-main .main-nav .nav-left img {
+main .main-nav .nav-sections img {
   height: 20px;
   width: 20px;
   margin: 0 10px;
 }
 
-main .main-nav .nav-left .voice.non-selected {
+main .main-nav .nav-sections .voice.non-selected {
   color: #717171;
 }
 
-main .main-nav .nav-left .voice.non-selected img {
+main .main-nav .nav-sections .voice.non-selected img {
   margin-left: 22px;
 }
+
+main .main-nav .main-top .nav-playlists .voice .plus {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  background-color: #A3A3A3;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+main .main-nav .main-top .nav-playlists ul li {
+  margin: 10px 20px;
+}
+
+/* CONTENT */
+
+main #content {
+  float: left;
+  height: 100%;
+  width: calc(100% - 230px);
+  background-color: #141922;
+  overflow-y: auto;
+}
+
+main #content .upgrade {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  width: calc(100% - 230px);
+  height: 90px;
+  background-color: rgba(8,11,18,0.4);
+}
+
+main #content .upgrade button {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  background-color: rgba(8,11,18,0.4);
+  color: #FFFFFF;
+  padding: 10px;
+  border: 1px solid #FFFFFF;
+  border-radius: 22px;
+}
+
 
 /* PLAYER */
 
@@ -200,7 +249,6 @@ footer {height: 90px;
 
 .progress-bar .progress-circle::before {
   position: relative;
-}* display: none; */
 }
 
 .progress-bar:hover .progress-circle {
