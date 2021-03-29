@@ -27,6 +27,10 @@ ul li {
   list-style: none;
 }
 
+.inline-menu li {
+  display: inline;
+}
+
 main {
   height: calc(100vh - 90px);
   background-color: #141922;
@@ -105,7 +109,7 @@ main #content {
 
 main #content .upgrade {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   position: fixed;
   width: calc(100% - 230px);
   height: 90px;
@@ -118,11 +122,63 @@ main #content .upgrade button {
   align-self: center;
   background-color: rgba(8,11,18,0.4);
   color: #FFFFFF;
-  padding: 10px;
+  padding: 10px 30px;
   border: 1px solid #FFFFFF;
   border-radius: 22px;
+  margin-right: 10px;
 }
 
+main #content .covers {
+  margin-top: 90px;
+}
+
+main #content .covers .covers-sections {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+main #content .covers .covers-sections ul li  {
+  margin: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #717171;
+}
+
+main #content .recently-played .covers h3,
+main #content .covers h5 {
+  margin: 10px;
+}
+
+main #content .covers h5 {
+  margin-bottom: 20px;
+}
+main #content .covers .cover-list {
+  display: flex;
+  justify-content:flex-start;
+}
+
+main #content .covers .cover-list .cover {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #content .covers .cover-list .cover h4,
+main #content .covers .cover-list .cover h5 {
+  margin-top: 10px;
+}
+
+main #content .covers .cover-list .cover h5 {
+  color: #717171;
+}
+
+main #content .covers .cover-list .cover .cover-img img {
+  width: 150px;
+  height: 150px;
+}
 
 /* PLAYER */
 
