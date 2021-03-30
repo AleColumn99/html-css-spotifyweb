@@ -1,3 +1,5 @@
+/* global */
+
 * {
   margin: 0;
   padding: 0;
@@ -31,19 +33,22 @@ ul li {
   display: inline;
 }
 
+/* main */
+
 main {
   height: calc(100vh - 90px);
   background-color: #141922;
 }
 
-/* NAV */
-
+/* left navbar */
 main .main-nav {
   width: 230px;
   height: 100%;
   overflow-y: auto;
   background-color: #000000;
 }
+
+/* top menu */
 
 main .main-nav .nav-top .nav-logo img {
   padding: 20px;
@@ -62,6 +67,10 @@ main .main-nav .voice {
   width: 100%;
 }
 
+main .main-nav .voice h4:hover {
+  color: #FFFFFF;
+}
+
 main .main-nav .nav-sections .green-bar {
   height: 30px;
   width: 2px;
@@ -75,26 +84,38 @@ main .main-nav .nav-sections img {
   margin: 0 10px;
 }
 
-main .main-nav .nav-sections .voice.non-selected {
+main .main-nav .voice.non-selected {
   color: #717171;
+  margin: 5px 0;
 }
 
 main .main-nav .nav-sections .voice.non-selected img {
   margin-left: 22px;
 }
 
-main .main-nav .main-top .nav-playlists .voice .plus {
+main .main-nav .nav-playlists .voice .plus {
   width: 30px;
   height: 30px;
-  padding: 10px;
+  margin-right: 10px;
   background-color: #A3A3A3;
   line-height: 30px;
   text-align: center;
   color: #000000;
 }
 
-main .main-nav .main-top .nav-playlists ul li {
-  margin: 10px 20px;
+main .main-nav .nav-center .nav-playlists .playlist-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main .main-nav .nav-center .voice {
+  margin-left: 20px;
+}
+
+main .main-nav .nav-center .nav-playlists h4 {
+  margin: 5px 0;
+  font-size: 12px;
 }
 
 /* CONTENT */
@@ -129,7 +150,7 @@ main #content .upgrade button {
 }
 
 main #content .covers {
-  margin-top: 90px;
+  margin-top: 110px;
 }
 
 main #content .covers .covers-sections {
@@ -149,7 +170,7 @@ main #content .covers .covers-sections ul li  {
 main #content .covers .recently-played,
 main #content .covers .created-for,
 main #content .covers .popular-artists {
-  margin: 20px;
+  margin: 50px 20px;
   /* background-color: aquamarine; */
 }
 
@@ -196,8 +217,8 @@ main #content .covers .cover-list .cover h5 {
 }
 
 main #content .covers .cover-list .cover .cover-img img {
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
 }
 
 
