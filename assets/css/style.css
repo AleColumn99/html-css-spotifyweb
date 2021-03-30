@@ -134,7 +134,7 @@ main #content .covers {
 
 main #content .covers .covers-sections {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
@@ -146,28 +146,48 @@ main #content .covers .covers-sections ul li  {
   color: #717171;
 }
 
-main #content .recently-played .covers h3,
-main #content .covers h5 {
-  margin: 10px;
+main #content .covers .recently-played,
+main #content .covers .created-for,
+main #content .covers .popular-artists {
+  margin: 20px;
+  /* background-color: aquamarine; */
 }
 
-main #content .covers h5 {
-  margin-bottom: 20px;
+main #content .covers .cover h3,
+main #content .covers .cover h5 {
+  margin-bottom: 10px;
 }
+
+main #content .covers h3.section-title {
+  font-size: 20px;
+}
+
+main #content .covers h5.section-title {
+  font-size: 12px;
+  color: #717171;
+  margin-top: 5px;
+}
+
+main #content .covers h3.section-title {
+  font-size: 20px;
+}
+
 main #content .covers .cover-list {
   display: flex;
-  justify-content:flex-start;
+  margin-top: 20px;
 }
 
 main #content .covers .cover-list .cover {
-  width: 200px;
+  width: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 30px;
 }
 
 main #content .covers .cover-list .cover h4,
 main #content .covers .cover-list .cover h5 {
+  text-align: center;
   margin-top: 10px;
 }
 
@@ -178,6 +198,12 @@ main #content .covers .cover-list .cover h5 {
 main #content .covers .cover-list .cover .cover-img img {
   width: 150px;
   height: 150px;
+}
+
+
+
+main #content .covers .popular-artists .cover-list .cover .cover-img img {
+  border-radius: 50%;
 }
 
 /* PLAYER */
